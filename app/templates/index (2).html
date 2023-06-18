@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <audio src="song1.mp3" id="Audio1"></audio>
+        <audio src="song2.mp3" id="Audio2"></audio>
+
+    </head>
+    <body>
+        <center>
+            <table width="500">
+                <tr bgcolor="lightgreen" align="center"><td colspan="2"> Song 1</td></tr>
+                <tr align="center"><td>Click and Play 1</td><td><button onclick="MyAudio(1)">Play Audio</button></td></tr>
+                <tr bgcolor="yellow" align="center"><td colspan="2"> Song 2</td></tr>
+                <tr align="center"><td>Click and Play 2</td><td><button onclick="MyAudio(2)">Play Audio</button></td></tr>
+            </table>
+        </center>
+        <script>
+              function MyAudio(X){
+                if (X==1)
+                document.getElementById("Audio1").play();
+                else
+                document.getElementById("Audio2").play();
+            }
+        </script>
+    </body>
+</html>
